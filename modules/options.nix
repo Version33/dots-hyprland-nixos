@@ -35,7 +35,7 @@ in
   config = mkMerge [
     (mkIf (config.illogical-impulse.enable) {
       xdg.configFile."Kvantum/Colloid".source = "${illogical-impulse-dotfiles}/.config/Kvantum/Colloid";
-      xdg.configFile."Kvantum/MaterialAdw".source = "${illogical-impulse-dotfiles}/.config/Kvantum/MaterialAdw";
+      #xdg.configFile."Kvantum/MaterialAdw".source = "${illogical-impulse-dotfiles}/.config/Kvantum/MaterialAdw";
       xdg.configFile."matugen".source = "${illogical-impulse-dotfiles}/.config/matugen";
       xdg.configFile."mpv/mpv.conf".source = "${illogical-impulse-dotfiles}/.config/mpv/mpv.conf";
       xdg.configFile."fish/config.fish".source = "${illogical-impulse-dotfiles}/.config/fish/config.fish";
