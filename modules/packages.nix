@@ -89,18 +89,6 @@ in
       gobject-introspection
       sassc
       opencv
-      (python3.withPackages (python-pkgs: with python-pkgs; [
-        build
-        pillow
-        setuptools-scm
-        wheel
-        pywayland
-        psutil
-        materialyoucolor
-        libsass
-        material-color-utilities
-        setproctitle
-      ]))
 
 
       # # WIDGETS #
