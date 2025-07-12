@@ -47,7 +47,7 @@ in
       eza
       #   fish
       #   fontconfig
-      python313Packages.kde-material-you-colors
+      python312Packages.kde-material-you-colors
       #   kitty
       #   matugen
       #   starship
