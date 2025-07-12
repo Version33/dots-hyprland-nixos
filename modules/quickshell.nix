@@ -7,8 +7,8 @@ in
     gtk = {
       enable = true;
       iconTheme = {
-        package = pkgs.adwaita-icon-theme;
-        name = "Adwaita";
+        name = "Papirus";
+        package = pkgs.papirus-icon-theme;
       };
     };
     qt = {
