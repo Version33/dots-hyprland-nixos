@@ -11,10 +11,10 @@ in
         package = pkgs.papirus-icon-theme;
       };
     };
-    qt = {
-      enable = true;
-      platformTheme.name = "kde6";
-    };
+   # qt = {
+   #   enable = true;
+   #   platformTheme.name = "gtk3";
+   # };
     home.sessionVariables.ILLOGICAL_IMPULSE_VIRTUAL_ENV = "~/.local/state/quickshell/.venv";
 
     home.packages = with pkgs; [
