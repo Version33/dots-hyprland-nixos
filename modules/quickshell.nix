@@ -19,6 +19,7 @@ in
 
     home.packages = with pkgs; [
       inputs.quickshell.packages.${pkgs.system}.default
+      kdePackages.plasma-workspace
       kdePackages.kdialog
       kdePackages.qt5compat
       kdePackages.qtbase
