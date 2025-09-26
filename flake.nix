@@ -8,7 +8,8 @@
     anyrun.inputs.nixpkgs.follows = "nixpkgs";
 
     quickshell = {
-      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell";
+      url =
+        "git+https://git.outfoxxed.me/outfoxxed/quickshell/refs/tags/v0.2.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -32,18 +33,15 @@
     };
   };
 
-  outputs = { self, nixpkgs, anyrun, illogical-impulse-dotfiles, systems, ... }@ inputs:
+  outputs =
+    { self, nixpkgs, anyrun, illogical-impulse-dotfiles, systems, ... }@inputs:
     let
       inherit (nixpkgs) lib;
       eachSystem = lib.genAttrs (import systems);
-    in
-    {
-      legacyPackages = eachSystem (
-        system:
-        import ./pkgs {
-          pkgs = nixpkgs.legacyPackages.${system};
-        }
-      );
-      homeManagerModules.default = import ./modules self anyrun illogical-impulse-dotfiles inputs;
+    in {
+      legacyPackages = eachSystem
+        (system: import ./pkgs { pkgs = nixpkgs.legacyPackages.${system}; });
+      homeManagerModules.default =
+        import ./modules self anyrun illogical-impulse-dotfiles inputs;
     };
 }
