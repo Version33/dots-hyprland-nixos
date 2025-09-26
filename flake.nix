@@ -8,8 +8,7 @@
     anyrun.inputs.nixpkgs.follows = "nixpkgs";
 
     quickshell = {
-      url =
-        "git+https://git.outfoxxed.me/outfoxxed/quickshell/refs/tags/v0.2.0";
+      url = "git+https://git.outfoxxed.me/outfoxxed/quickshell?ref=v0.2.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
