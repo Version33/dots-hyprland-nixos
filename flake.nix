@@ -27,7 +27,7 @@
     };
 
     illogical-impulse-dotfiles = {
-      url = " end-4/dots-hyprland";
+      url = "github:end-4/dots-hyprland";
       flake = false;
     };
   };
