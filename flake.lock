@@ -451,13 +451,13 @@
       "locked": {
         "lastModified": 1759446390,
         "narHash": "sha256-/kzZskzIzg+jOUs9FEba06xxQV0elZjoSyw4q3yyNiA=",
-        "owner": "version33",
+        "owner": "end-4",
         "repo": "dots-hyprland",
         "rev": "71f7d450840773170939d929e5ae7dd6ac984ea5",
         "type": "github"
       },
       "original": {
-        "owner": "version33",
+        "owner": "end-4",
         "repo": "dots-hyprland",
         "type": "github"
       }
